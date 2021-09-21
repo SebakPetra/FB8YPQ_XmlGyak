@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konferencia>
+    <cim id="knf_cm" mufaj="kaland">Harry Potter</cim>
+    <hallgatok id="knf_hlg">
+        <hallgato id="knf_hlg_1">
+            <nev>Sebak Petra</nev>
+            <lakcim>Gesztely Bem József 13.</lakcim>
+        </hallgato>
+        <hallgato id="knf_hlg_2">
+            <nev>Toth Arpad</nev>
+            <lakcim>Gesztely József Attila 9.</lakcim>
+        </hallgato>
+        <hallgato id="knf_hlg_3">
+            <nev>Nagy Linda</nev>
+            <lakcim>Gesztely Nagy Sándor 7.</lakcim>
+        </hallgato>
+    </hallgatok>
+    <helyszin id="knf_hn">Miskolc</helyszin>
+    <eloado id="knf_ld">
+        <nev>Nagy Adrienn</nev>
+        <adoszam>23451178</adoszam>
+        <lakcim>Miskolc Petőfi tér 2.</lakcim>
+    </eloado>
+    <datum>2021.09.30.</datum>
+</konferencia>
