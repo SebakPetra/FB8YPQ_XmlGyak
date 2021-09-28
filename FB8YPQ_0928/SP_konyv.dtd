@@ -1,12 +1,26 @@
+<!DOCTYPE konyvtar[
+<!ELEMENT konyvtar (konyv)+>
+<!ATTLIST konyvtar
+  xmlns CDATA #FIXED ''>
 
-
-
-
-<!DOCTYPE konyvtar [
-<!ELEMENT konyvtar (konyv)*>
 <!ELEMENT konyv (cim,kiadasiEv,kiado,szerzo)>
+<!ATTLIST konyv
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED>
+
 <!ELEMENT cim (#PCDATA)>
+<!ATTLIST cim
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT kiadasiEv (#PCDATA)>
+<!ATTLIST kiadasiEv
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT kiado (#PCDATA)>
-<!ELEMENT szerzo (#PCDATA)+>
+<!ATTLIST kiado
+  xmlns CDATA #FIXED ''>
+
+<!ELEMENT szerzo (#PCDATA)>
+<!ATTLIST szerzo
+  xmlns CDATA #FIXED ''>
 ]>
