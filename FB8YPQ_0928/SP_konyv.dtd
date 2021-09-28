@@ -1,4 +1,3 @@
-<!DOCTYPE konyvtar[
 <!ELEMENT konyvtar (konyv)+>
 <!ATTLIST konyvtar
   xmlns CDATA #FIXED ''>
@@ -23,4 +22,4 @@
 <!ELEMENT szerzo (#PCDATA)>
 <!ATTLIST szerzo
   xmlns CDATA #FIXED ''>
-]>
+
