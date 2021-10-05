@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 
 <mozi
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" 
     xsi:noNamespaceSchemaLocation="mozi1.xsd">
     <film id="1" mufaj="horror">
         <rendezo id="1" nev="alex"/>

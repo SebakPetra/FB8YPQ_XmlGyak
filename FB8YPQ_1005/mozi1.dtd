@@ -1,7 +1,28 @@
 <?xml encoding="UTF-8"?>
 
 <!ELEMENT mozi (film)+>
+<!ATTLIST mozi
+  xmlns CDATA #FIXED ''>
+
 <!ELEMENT film (rendezo+,szinesz,iro)>
+<!ATTLIST film
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED
+  mufaj NMTOKEN #REQUIRED>
+
 <!ELEMENT rendezo EMPTY>
+<!ATTLIST rendezo
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED
+  nev NMTOKEN #REQUIRED>
+
 <!ELEMENT szinesz EMPTY>
+<!ATTLIST szinesz
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED
+  nev CDATA #REQUIRED>
+
 <!ELEMENT iro EMPTY>
+<!ATTLIST iro
+  xmlns CDATA #FIXED ''
+  id CDATA #REQUIRED>
