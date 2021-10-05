@@ -1,0 +1,7 @@
+<?xml encoding="UTF-8"?>
+
+<!ELEMENT mozi (film)+>
+<!ELEMENT film (rendezo+,szinesz,iro)>
+<!ELEMENT rendezo EMPTY>
+<!ELEMENT szinesz EMPTY>
+<!ELEMENT iro EMPTY>
