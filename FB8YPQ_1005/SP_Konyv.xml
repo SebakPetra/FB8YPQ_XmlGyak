@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<konyvtar xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="SP_Konyv.xsd">
+	<konyv id="1">
+		<cim>Bevezetés a javaba</cim>
+        <kiadasiEv>1999</kiadasiEv>
+        <kiado>Álomgyár</kiado>
+        <szerzo>Stephan King</szerzo>
+		<abstract/>
+	</konyv>
+    <konyv id="2">
+		<cim>Bevezetés a C#-ba</cim>
+        <kiadasiEv>2025</kiadasiEv>
+        <kiado>Libri</kiado>
+        <szerzo>E.L.James</szerzo>
+		<abstract/>
+	</konyv>
+    <konyv id="3">
+		<cim>ASP .NET</cim>
+        <kiadasiEv>2010</kiadasiEv>
+        <kiado>Álomgyár</kiado>
+        <szerzo>X Y</szerzo>
+		<abstract/>
+	</konyv>
+</konyvtar>
