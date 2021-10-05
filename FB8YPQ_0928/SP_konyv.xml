@@ -2,19 +2,19 @@
 <!DOCTYPE konyvtar SYSTEM "SP_konyv.dtd">
 <konyvtar>
 	<konyv id="1">
-		<cim>Játszóház</cim>
+		<cim>Bevezetés a javaba</cim>
         <kiadasiEv>1999</kiadasiEv>
         <kiado>Álomgyár</kiado>
-        <szerzo>Stephan King</szerzo>
+        <szerzo>Nem Tudom</szerzo>
 	</konyv>
     <konyv id="2">
-		<cim>Szürke 50 árnyalata</cim>
+	<cim>Bevezetés a C#-ba</cim>
         <kiadasiEv>2025</kiadasiEv>
         <kiado>Libri</kiado>
-        <szerzo>E.L.James</szerzo>
+        <szerzo>Csató Endre</szerzo>
 	</konyv>
     <konyv id="3">
-		<cim>3 méterrel a felhők felett</cim>
+	<cim>ASP .Net</cim>
         <kiadasiEv>2010</kiadasiEv>
         <kiado>Álomgyár</kiado>
         <szerzo>X Y</szerzo>
