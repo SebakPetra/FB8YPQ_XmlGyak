@@ -1,25 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+
 <!ELEMENT konyvtar (konyv)+>
-<!ATTLIST konyvtar
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT konyv (cim,kiadasiEv,kiado,szerzo)>
-<!ATTLIST konyv
-  xmlns CDATA #FIXED ''
-  id CDATA #REQUIRED>
-
 <!ELEMENT cim (#PCDATA)>
-<!ATTLIST cim
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT kiadasiEv (#PCDATA)>
-<!ATTLIST kiadasiEv
-  xmlns CDATA #FIXED ''>
-
 <!ELEMENT kiado (#PCDATA)>
-<!ATTLIST kiado
-  xmlns CDATA #FIXED ''>
-
-<!ELEMENT szerzo (#PCDATA)>
-<!ATTLIST szerzo
-  xmlns CDATA #FIXED ''>
+<!ELEMENT szerzo (#PCDATA)*>
 
