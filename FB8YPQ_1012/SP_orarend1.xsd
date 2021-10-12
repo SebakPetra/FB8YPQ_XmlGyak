@@ -1,31 +1,30 @@
 <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
-  <xs:element name="orarend">
-    <xs:complexType>
+
+<xs:element name="orarend">
+  <xs:complexType>
+    <xs:sequence>
+      <xs:element name="ora" type="oraTipus" maxOccurs="unbounded" minOccurs="0"/>
+    </xs:sequence>
+  </xs:complexType>
+</xs:element>
+
+    <xs:complexType name="oraTipus">
       <xs:sequence>
-        <xs:element name="ora" maxOccurs="unbounded" minOccurs="0">
-          <xs:complexType>
-            <xs:sequence>
               <xs:element type="targy_Tipus" name="targy"/>
               <xs:element type="idopont_Tipus" name="idopont"/>
               <xs:element type="helyszin_Tipus" name="helyszin"/>
               <xs:element type="xs:string" name="oktato"/>
               <xs:element type="xs:string" name="szak"/>
             </xs:sequence>
-            <xs:attribute type="xs:byte" name="id" use="optional"/>
-            <xs:attribute type="xs:string" name="tipus" use="optional"/>
-          </xs:complexType>
-        </xs:element>
-      </xs:sequence>
+            <xs:attribute type="xs:byte" name="id" use="required"/>
+            <xs:attribute type="oraTipusTipus" name="tipus" default="eloadas"/>
     </xs:complexType>
-  </xs:element>
+
 
   
   <xs:simpleType name="idopont_Tipus">
   <xs:restriction base="xs:string">
-    <xs:pattern value = "Hetfő [0-9][0-9]*-[0-9][0-9]*"/>
-    <xs:pattern value = "Kedd [0-9][0-9]*-[0-9][0-9]*"/>
-    <xs:pattern value = "Szerda [0-9][0-9]*-[0-9][0-9]*"/>
-    <!--<xs:pattern value="Hetfő [0-9][0-9]*-[0-9][0-9]*|Kedd [0-9][0-9]*-[0-9][0-9]*|Szerda [0-9][0-9]*-[0-9][0-9]*"/> -->
+    <xs:pattern value="Hétfő [0-9][0-9]*-[0-9][0-9]*|Kedd [0-9][0-9]*-[0-9][0-9]*|Szerda [0-9][0-9]*-[0-9][0-9]*"/>
   </xs:restriction>
 </xs:simpleType>
 
@@ -42,6 +41,12 @@
 <xs:simpleType name="helyszin_Tipus">
   <xs:restriction base="xs:string">
     <xs:pattern value="[a-zA-z]*[0-9]*/[0-9]*[0-9]*[0-9]*"/>
+  </xs:restriction>
+</xs:simpleType>
+
+<xs:simpleType name="oraTipusTipus">
+  <xs:restriction base="xs:string">
+    <xs:pattern value="eloadas|gyakorlat"/>
   </xs:restriction>
 </xs:simpleType>
 
