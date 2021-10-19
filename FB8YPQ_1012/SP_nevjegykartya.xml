@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<nevjegykartyak xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SP_nevjegykartya.xsd">
+
+    <nevjegykartya id="1">
+        <nev>Sebak Petra</nev>
+        <ceg>
+            <nev>Evosoft</nev>
+            <cim>
+                <iranyitoszam>3526</iranyitoszam>
+                <varos>Miskolc</varos>
+                <utca>Arany Janos ter</utca>
+                <hazszam>1</hazszam>
+            </cim>
+            <telefonszam>46-501-120</telefonszam>
+            <weblap>https://www.evosoft.hu/</weblap>
+        </ceg>
+        <beosztas>Developer</beosztas>
+        <telefonszam>21-377-20-69</telefonszam>
+        <email>pepcse@gmail.com</email>
+    </nevjegykartya>
+
+    <nevjegykartya id="2">
+        <nev>Nagy László</nev>
+        <ceg>
+            <nev>E.ON</nev>
+            <cim>
+                <iranyitoszam>1134</iranyitoszam>
+                <varos>Budapest</varos>
+                <utca>Kossuth</utca>
+                <hazszam>17</hazszam>
+            </cim>
+            <telefonszam>46-565-300</telefonszam>
+            <weblap>https://www.eon.hu/hu/lakossagi.html</weblap>
+        </ceg>
+        <beosztas>Developer</beosztas>
+        <telefonszam>20-123-45-67</telefonszam>
+        <email>nagylaci99@gmail.com</email>
+    </nevjegykartya>
+
+</nevjegykartyak>

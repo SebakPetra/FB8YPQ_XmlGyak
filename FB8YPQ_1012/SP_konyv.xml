@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<konyvek xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="SP_konyv.xsd">
+    <konyv isbn="9789631191714">
+        <cim>Harry Potter</cim>
+        <szerzo>J.K.Rowling</szerzo>
+        <szereplo id="1">
+            <nev>Harry Potter</nev>
+            <baratja>Ron Wisley</baratja>
+            <szuletett>1872</szuletett>
+            <jellemzes>Bátor, merész, kedves</jellemzes>
+        </szereplo>
+        <szereplo id="2">
+            <nev>Ron Wisley</nev>
+            <szuletett>1900</szuletett>
+            <jellemzes>Félénk, szeretteljes</jellemzes>
+        </szereplo>
+    </konyv>
+</konyvek>
