@@ -1,0 +1,27 @@
+Nincs se java a gépemen, se eclipse. C#-ot tanultam. Otthon letöltök mindent!
+import java.io.File;
+import java.io.IOException;
+
+import javax.xml.parsers.ParserConfigurationException;
+import javax.xml.parsers.SAXParser;
+import javax.xml.parsers.SAXParserFactory;
+
+import org.xml.sax.Attributes;
+import org.xml.sax.SAXException;
+import org.xml.sax.helpers.DefaultHandler;
+
+public class Main
+{
+    public static void main(String[] args) {
+        try{
+            SAXParseFactory saxParseFactory = SAXParseFactory.newInstance();
+            SAXParser saxParser = saxParseFactory.newSAXParses();
+            SaxHandler handler = new SaxHandler();
+            
+            saxParser.parse(new File("szemelyekFB8YPQ.xml"), handler);
+            
+        }catch(ParserConfigurationException | SAXException | IOException e){
+            e.printStackTrace();
+        }      
+    }
+}
