@@ -1,4 +1,4 @@
-Nincs se java a gépemen, se eclipse. C#-ot tanultam. Otthon letöltök mindent!
+package SaxFB8YPQ1019;
 import java.io.File;
 import java.io.IOException;
 
@@ -6,22 +6,22 @@ import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParser;
 import javax.xml.parsers.SAXParserFactory;
 
-import org.xml.sax.Attributes;
 import org.xml.sax.SAXException;
-import org.xml.sax.helpers.DefaultHandler;
 
-public class Main
-{
-    public static void main(String[] args) {
+public class SaxFB8YPQ {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
         try{
-            SAXParseFactory saxParseFactory = SAXParseFactory.newInstance();
-            SAXParser saxParser = saxParseFactory.newSAXParses();
+            SAXParserFactory saxParseFactory = SAXParserFactory.newInstance();
+            SAXParser saxParser = saxParseFactory.newSAXParser();
             SaxHandler handler = new SaxHandler();
             
             saxParser.parse(new File("szemelyekFB8YPQ.xml"), handler);
             
         }catch(ParserConfigurationException | SAXException | IOException e){
             e.printStackTrace();
-        }      
-    }
+        }  
+	}
+
 }
