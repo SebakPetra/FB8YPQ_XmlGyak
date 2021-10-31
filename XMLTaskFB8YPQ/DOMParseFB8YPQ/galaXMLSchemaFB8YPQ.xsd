@@ -1,0 +1,141 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="galaSzervezes">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:choice maxOccurs="unbounded">
+                    <xs:element name="Fellepes" type="fellepesType"/>
+                    <xs:element name="Szervezo" type="szervezoType"/>
+                    <xs:element name="Tancgala" type="tancgalaType"/>
+                    <xs:element name="Tanciskola" type="tanciskolaType"/>
+                    <xs:element name="Csoport" type="csoportType"/>
+                    <xs:element name="Tancora" type="tancoraType"/>
+                    <xs:element name="Koreografia" type="koreografiaType"/>
+                </xs:choice>
+            </xs:sequence>
+        </xs:complexType>
+        <xs:key name="koreoId_PK">
+            <xs:selector xpath="Koreografia"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="csoportId_PK">
+            <xs:selector xpath="Csoport"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="szervezoId_PK">
+            <xs:selector xpath="Szervezo"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="tanciskolaId_PK">
+            <xs:selector xpath="Tanciskola"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:key name="tancgalaId_PK">
+            <xs:selector xpath="Tancgala"/>
+            <xs:field xpath="@id"/>
+        </xs:key>
+        <xs:keyref name="koreoId_FK" refer="koreoId_PK">
+            <xs:selector xpath="Fellepes"/>
+            <xs:field xpath="@koreoId"/>
+        </xs:keyref>
+        <xs:keyref name="csoportId_FK" refer="csoportId_PK">
+            <xs:selector xpath="Fellepes"/>
+            <xs:field xpath="@csoportId"/>
+        </xs:keyref>
+        <xs:keyref name="tanciskolaId_FK" refer="tanciskolaId_PK">
+            <xs:selector xpath="Csoport"/>
+            <xs:field xpath="@tId"/>
+        </xs:keyref>
+        <xs:keyref name="tancgalaId_FK" refer="tancgalaId_PK">
+            <xs:selector xpath="Tanciskola"/>
+            <xs:field xpath="@tancgalaId"/>
+        </xs:keyref>
+        <xs:keyref name="szervezoId_FK" refer="szervezoId_PK">
+            <xs:selector xpath="Tancgala"/>
+            <xs:field xpath="@szId"/>
+        </xs:keyref>
+    </xs:element>
+
+    <xs:complexType name="fellepesType">
+        <xs:sequence>
+            <xs:element name="szinpad"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="koreoId" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="csoportId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="szervezoType">
+        <xs:sequence>
+            <xs:element name="Ceg" type="xs:string"/>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Telefonszam" type="telType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="tancgalaType">
+        <xs:sequence>
+            <xs:element name="Helyszin" type="xs:string"/>
+            <xs:element name="Idopont" type="tancgalaIdopontType"/>
+            <xs:element name="Idotartam" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="szervezoId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="tanciskolaType">
+        <xs:sequence>
+            <xs:element name="TanciskolaNev" type="xs:string"/>
+            <xs:element name="Telefonszam" type="telType"/>
+            <xs:element name="Vezeto" type="vezetoType"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="tancgalaId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="csoportType">
+        <xs:sequence>
+            <xs:element name="Korosztaly" type="xs:string"/>
+            <xs:element name="Letszam" type="xs:integer"/>
+            <xs:element name="Csoportnev" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="tanciskolaId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="tancoraType">
+        <xs:sequence>
+            <xs:element name="Idopont" type="tancoraIdopontType"/>
+            <xs:element name="Terem" type="xs:integer"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+        <xs:attribute name="csoportId" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="koreografiaType">
+        <xs:sequence>
+            <xs:element name="Zene" type="xs:string"/>
+            <xs:element name="Stilus" type="xs:string"/>
+        </xs:sequence>
+        <xs:attribute name="id" type="xs:unsignedByte" use="required"/>
+    </xs:complexType>
+    <xs:complexType name="vezetoType">
+        <xs:sequence>
+            <xs:element name="Nev" type="xs:string"/>
+            <xs:element name="Tapasztalat" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:simpleType name="tancoraIdopontType">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="Hétfő [0-9][0-9]*|Kedd [0-9][0-9]*|Szerda [0-9][0-9]*|Csütörtök [0-9][0-9]*|Péntek [0-9][0-9]*"/>
+        </xs:restriction>
+      </xs:simpleType>
+
+      <xs:simpleType name="tancgalaIdopontType">
+        <xs:restriction base="xs:string">
+          <xs:pattern value="[0-9][0-9][0-9][0-9].[0-9][0-9].[0-9][0-9]. [0-9][0-9]*:[0-9][0-9]"/>
+        </xs:restriction>
+      </xs:simpleType>
+
+	<xs:simpleType name="telType">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="\d{2}-\d{3}-\d{2}-\d{2}"/>
+            <xs:pattern value="\d{2}-\d{3}-\d{3}"/>
+        </xs:restriction>
+    </xs:simpleType>
+</xs:schema>

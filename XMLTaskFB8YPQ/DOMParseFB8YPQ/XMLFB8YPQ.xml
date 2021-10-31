@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?><galaSzervezes xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="galaXMLSchemaFB8YPQ.xsd">
+    <Fellepes csoportId="1" id="1" koreoId="1">
+        <szinpad>Kicsi</szinpad>
+    </Fellepes>
+    <Fellepes csoportId="4" id="2" koreoId="2">
+        <szinpad>Nagy</szinpad>
+    </Fellepes>
+    <Fellepes csoportId="3" id="3" koreoId="2">
+        <szinpad>Nagy</szinpad>
+    </Fellepes>
+    <Fellepes csoportId="3" id="4" koreoId="3">
+        <szinpad>Kicsi</szinpad>
+    </Fellepes>
+    <Fellepes csoportId="2" id="5" koreoId="3">
+        <szinpad>Kicsi</szinpad>
+    </Fellepes>
+    <Szervezo id="1">
+        <Ceg>DanceHall Kft.</Ceg>
+        <Nev>Nagy Alexandra</Nev>
+        <Telefonszam>13-123-56-10</Telefonszam>
+    </Szervezo>
+    <Tancgala id="1" szervezoId="1">
+        <Helyszin>Miskolc</Helyszin>
+        <Idopont>2021.01.30. 15:00</Idopont>
+        <Idotartam>2 óra</Idotartam>
+    </Tancgala>
+    <Tancgala id="2" szervezoId="1">
+        <Helyszin>Debrecen</Helyszin>
+        <Idopont>2022.04.12. 19:00</Idopont>
+        <Idotartam>1 óra</Idotartam>
+    </Tancgala>
+    <Tanciskola id="1" tancgalaId="1">
+        <TanciskolaNev>Elte</TanciskolaNev>
+        <Telefonszam>21-377-20-69</Telefonszam>
+        <Vezeto>
+            <Nev>Tóth Evelin</Nev>
+            <Tapasztalat>3 év</Tapasztalat>
+        </Vezeto>
+    </Tanciskola>
+    <Tanciskola id="2" tancgalaId="2">
+        <TanciskolaNev>Dance Elit</TanciskolaNev>
+        <Telefonszam>21-343-22-88</Telefonszam>
+        <Vezeto>
+            <Nev>Hajdú Sándor</Nev>
+            <Tapasztalat>1 év</Tapasztalat>
+        </Vezeto>
+    </Tanciskola>
+    <Csoport id="1" tanciskolaId="1">
+        <Korosztaly>9-11</Korosztaly>
+        <Letszam>10</Letszam>
+        <Csoportnev>CoolKids</Csoportnev>
+    </Csoport>
+    <Csoport id="2" tanciskolaId="1">
+        <Korosztaly>12-14</Korosztaly>
+        <Letszam>13</Letszam>
+        <Csoportnev>Girls</Csoportnev>
+    </Csoport>
+    <Csoport id="3" tanciskolaId="1">
+        <Korosztaly>15-17</Korosztaly>
+        <Letszam>9</Letszam>
+        <Csoportnev>Contemp</Csoportnev>
+    </Csoport>
+    <Csoport id="4" tanciskolaId="2">
+        <Korosztaly>8-11</Korosztaly>
+        <Letszam>19</Letszam>
+        <Csoportnev>Unicorns</Csoportnev>
+    </Csoport>
+    <Csoport id="5" tanciskolaId="2">
+        <Korosztaly>12-16</Korosztaly>
+        <Letszam>5</Letszam>
+        <Csoportnev>TroubleMakers</Csoportnev>
+    </Csoport>
+    <Tancora csoportId="1" id="1">
+        <Idopont>Hétfő 14</Idopont>
+        <Terem>3</Terem>
+    </Tancora>
+    <Tancora csoportId="2" id="2">
+        <Idopont>Hétfő 16</Idopont>
+        <Terem>3</Terem>
+    </Tancora>
+    <Tancora csoportId="3" id="3">
+        <Idopont>Kedd 14</Idopont>
+        <Terem>3</Terem>
+    </Tancora>
+    <Tancora csoportId="4" id="4">
+        <Idopont>Szerda 14</Idopont>
+        <Terem>3</Terem>
+    </Tancora>
+    <Tancora csoportId="4" id="5">
+        <Idopont>Péntek 18</Idopont>
+        <Terem>3</Terem>
+    </Tancora>
+    <Koreografia id="1">
+        <Zene>Adele-Rolling in the deep</Zene>
+        <Stilus>HipHop</Stilus>
+    </Koreografia>
+    <Koreografia id="2">
+        <Zene>Betti-Cry for help</Zene>
+        <Stilus>Modern</Stilus>
+    </Koreografia>
+    <Koreografia id="3">
+        <Zene>Jatleg-Égen át</Zene>
+        <Stilus>HipHop</Stilus>
+    </Koreografia>
+</galaSzervezes>
