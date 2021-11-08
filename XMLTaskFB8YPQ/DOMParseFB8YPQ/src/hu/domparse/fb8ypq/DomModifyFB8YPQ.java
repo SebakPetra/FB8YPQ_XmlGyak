@@ -65,6 +65,7 @@ public class DomModifyFB8YPQ {
 			ModifySzervezo(doc, szervezokSzama);
 			break;
 		}
+		scan.close();
 	}
 
 	private static void ModifyTancgala(Document doc, int tancgalaszam) throws TransformerException {
@@ -85,6 +86,7 @@ public class DomModifyFB8YPQ {
 		String idopont = sc.nextLine();
 		System.out.print("Idõtartam: ");
 		String idotartam = sc.nextLine();
+		sc.close();
 		// lekérdezzük az Elementeket, majd setTextContent-el módosítjuk.
 		NodeList nodeList = doc.getElementsByTagName("Tancgala");
 		for (int i = 0; i < nodeList.getLength(); i++) {
@@ -122,6 +124,7 @@ public class DomModifyFB8YPQ {
 		String letszam = sc.nextLine();
 		System.out.print("Csoportnév: ");
 		String csoportnev = sc.nextLine();
+		sc.close();
 		// lekérdezzük az Elementeket, majd setTextContent-el módosítjuk.
 		NodeList nodeList = doc.getElementsByTagName("Csoport");
 		for (int i = 0; i < nodeList.getLength(); i++) {
@@ -156,6 +159,7 @@ public class DomModifyFB8YPQ {
 		String idopont = sc.nextLine();
 		System.out.print("Terem: ");
 		String terem = sc.nextLine();
+		sc.close();
 		NodeList nodeList = doc.getElementsByTagName("Tancora");
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			Node nNode = nodeList.item(i);
@@ -178,6 +182,7 @@ public class DomModifyFB8YPQ {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nid:");
 		String id = sc.nextLine();
+		sc.close();
 		return id;
 	}
 
@@ -196,6 +201,7 @@ public class DomModifyFB8YPQ {
 		String ceg = sc.nextLine();
 		System.out.print("Telefonszám: ");
 		String telszam = sc.nextLine();
+		sc.close();
 		NodeList nodeList = doc.getElementsByTagName("Szervezo");
 		for (int i = 0; i < nodeList.getLength(); i++) {
 			Node nNode = nodeList.item(i);
