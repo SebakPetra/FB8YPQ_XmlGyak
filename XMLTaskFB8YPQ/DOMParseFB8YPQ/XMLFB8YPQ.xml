@@ -16,8 +16,8 @@
     </Fellepes>
     <Szervezo id="1">
         <Ceg>DanceHall Kft.</Ceg>
-        <Nev>Nagy Alexandra</Nev>
-        <Telefonszam>13-123-56-10</Telefonszam>
+        <Nev>Nagy Fanni</Nev>
+        <Telefonszam>13-123-45-21</Telefonszam>
     </Szervezo>
     <Tancgala id="1" szervezoId="1">
         <Helyszin>Miskolc</Helyszin>

@@ -32,9 +32,7 @@ public class DomQueryFB8YPQ {
 
 		System.out.println("Root element: " + doc.getDocumentElement().getNodeName());
 		System.out.println("------------------------------");
-		System.out.println("Az Elte tánciskola adatai: ");
 		LoadTanciskolaQuery(doc);
-
 	}
 
 	public static void LoadTanciskolaQuery(Document doc) throws TransformerException {
