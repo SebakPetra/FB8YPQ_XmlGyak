@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+
+<?xml-stylesheet type='text/xsl' href='studentFB8YPQ.xsl'?>
+
+<class>
+    <student id = "0">
+        <keresztnev>Petra</keresztnev>
+        <vezeteknev>Sebak</vezeteknev>
+        <becenev>Pepe</becenev>
+        <kor>22</kor>
+    </student>
+    <student id = "1">
+        <keresztnev>Marton</keresztnev>
+        <vezeteknev>Szalai</vezeteknev>
+        <becenev>Szasza</becenev>
+        <kor>22</kor>
+    </student>
+    <student id = "2">
+        <keresztnev>Mark</keresztnev>
+        <vezeteknev>Soos</vezeteknev>
+        <becenev>Soska</becenev>
+        <kor>12</kor>
+    </student>
+</class>
