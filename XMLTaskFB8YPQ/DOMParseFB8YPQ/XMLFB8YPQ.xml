@@ -17,7 +17,7 @@
     <Szervezo id="1">
         <Ceg>DanceHall Kft.</Ceg>
         <Nev>Nagy Fanni</Nev>
-        <Telefonszam>13-123-45-21</Telefonszam>
+        <Telefonszam>12-345-32-23</Telefonszam>
     </Szervezo>
     <Tancgala id="1" szervezoId="1">
         <Helyszin>Miskolc</Helyszin>
@@ -66,8 +66,8 @@
         <Csoportnev>Unicorns</Csoportnev>
     </Csoport>
     <Csoport id="5" tanciskolaId="2">
-        <Korosztaly>12-16</Korosztaly>
-        <Letszam>5</Letszam>
+        <Korosztaly>12-17</Korosztaly>
+        <Letszam>6</Letszam>
         <Csoportnev>TroubleMakers</Csoportnev>
     </Csoport>
     <Tancora csoportId="1" id="1">

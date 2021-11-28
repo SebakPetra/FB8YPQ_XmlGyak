@@ -182,7 +182,6 @@ public class DomModifyFB8YPQ {
 		Scanner sc = new Scanner(System.in);
 		System.out.print("\nid:");
 		String id = sc.nextLine();
-		sc.close();
 		return id;
 	}
 
