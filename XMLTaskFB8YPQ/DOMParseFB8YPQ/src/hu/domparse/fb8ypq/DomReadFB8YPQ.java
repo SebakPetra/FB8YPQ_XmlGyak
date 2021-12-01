@@ -76,75 +76,7 @@ public class DomReadFB8YPQ {
 			}
 		}
 	}
-
-	public static void ReadTancoraById(Document doc, String id) {
-		NodeList nList = doc.getElementsByTagName("Tancora");
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			Element element = (Element) nNode;
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				if (element.getAttribute("id").equals(id)) {
-					String idopont = element.getElementsByTagName("Idopont").item(0).getTextContent();
-					String terem = element.getElementsByTagName("Terem").item(0).getTextContent();
-					String csoportId = element.getAttribute("csId");
-					System.out.println("Táncóra adatok: \n\tIdõpont:\t" + idopont + "\n\tTerem:\t" + terem);
-					ReadCsoportById(doc, csoportId);
-				}
-			}
-		}
-	}
-
-	public static void ReadKoreografiaById(Document doc, String id) {
-		NodeList nList = doc.getElementsByTagName("Koreografia");
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			Element element = (Element) nNode;
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				if (element.getAttribute("id").equals(id)) {
-					String zene = element.getElementsByTagName("Zene").item(0).getTextContent();
-					String stilus = element.getElementsByTagName("Stilus").item(0).getTextContent();
-					System.out.println("Koreográfia adatok: \n\tZene:\t" + zene + "\n\tStílus:\t" + stilus);
-				}
-			}
-		}
-	}
-
-	public static void ReadTancgalaById(Document doc, String id) {
-		NodeList nList = doc.getElementsByTagName("Tancgala");
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			Element element = (Element) nNode;
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				if (element.getAttribute("id").equals(id)) {
-					String helyszin = element.getElementsByTagName("Helyszin").item(0).getTextContent();
-					String idopont = element.getElementsByTagName("Idopont").item(0).getTextContent();
-					String idotartam = element.getElementsByTagName("Idotartam").item(0).getTextContent();
-					System.out.println("Tancgála adatok: \n\tHelyszín:\t" + helyszin + "\n\tIdõpont:\t" + idopont
-							+ "\n\tIdotartam:\t" + idotartam);
-					String szervezoId = element.getAttribute("szervezoId");
-					ReadSzervezoById(doc, szervezoId);
-				}
-			}
-		}
-	}
-
-	public static void ReadSzervezoById(Document doc, String id) {
-		NodeList nList = doc.getElementsByTagName("Szervezo");
-		for (int i = 0; i < nList.getLength(); i++) {
-			Node nNode = nList.item(i);
-			Element element = (Element) nNode;
-			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
-				if (element.getAttribute("id").equals(id)) {
-					String nev = element.getElementsByTagName("Nev").item(0).getTextContent();
-					String ceg = element.getElementsByTagName("Ceg").item(0).getTextContent();
-					String telszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
-					System.out.println(
-							"Szervezõ adatok: \n\tNév:\t" + nev + "\n\tCég:\t" + ceg + "\n\tTelefonszám:\t" + telszam);
-				}
-			}
-		}
-	}
-
+	
 	public static void ReadTanciskolaById(Document doc, String id) {
 		NodeList nList = doc.getElementsByTagName("Tanciskola");
 		for (int i = 0; i < nList.getLength(); i++) {
@@ -164,5 +96,73 @@ public class DomReadFB8YPQ {
 			}
 		}
 	}
+	
+	public static void ReadTancgalaById(Document doc, String id) {
+		NodeList nList = doc.getElementsByTagName("Tancgala");
+		for (int i = 0; i < nList.getLength(); i++) {
+			Node nNode = nList.item(i);
+			Element element = (Element) nNode;
+			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+				if (element.getAttribute("id").equals(id)) {
+					String helyszin = element.getElementsByTagName("Helyszin").item(0).getTextContent();
+					String idopont = element.getElementsByTagName("Idopont").item(0).getTextContent();
+					String idotartam = element.getElementsByTagName("Idotartam").item(0).getTextContent();
+					System.out.println("Tancgála adatok: \n\tHelyszín:\t" + helyszin + "\n\tIdõpont:\t" + idopont
+							+ "\n\tIdotartam:\t" + idotartam);
+					String szervezoId = element.getAttribute("szervezoId");
+					ReadSzervezoById(doc, szervezoId);
+				}
+			}
+		}
+	}
+	
+	public static void ReadSzervezoById(Document doc, String id) {
+		NodeList nList = doc.getElementsByTagName("Szervezo");
+		for (int i = 0; i < nList.getLength(); i++) {
+			Node nNode = nList.item(i);
+			Element element = (Element) nNode;
+			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+				if (element.getAttribute("id").equals(id)) {
+					String nev = element.getElementsByTagName("Nev").item(0).getTextContent();
+					String ceg = element.getElementsByTagName("Ceg").item(0).getTextContent();
+					String telszam = element.getElementsByTagName("Telefonszam").item(0).getTextContent();
+					System.out.println(
+							"Szervezõ adatok: \n\tNév:\t" + nev + "\n\tCég:\t" + ceg + "\n\tTelefonszám:\t" + telszam);
+				}
+			}
+		}
+	}
 
+
+	public static void ReadKoreografiaById(Document doc, String id) {
+		NodeList nList = doc.getElementsByTagName("Koreografia");
+		for (int i = 0; i < nList.getLength(); i++) {
+			Node nNode = nList.item(i);
+			Element element = (Element) nNode;
+			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+				if (element.getAttribute("id").equals(id)) {
+					String zene = element.getElementsByTagName("Zene").item(0).getTextContent();
+					String stilus = element.getElementsByTagName("Stilus").item(0).getTextContent();
+					System.out.println("Koreográfia adatok: \n\tZene:\t" + zene + "\n\tStílus:\t" + stilus);
+				}
+			}
+		}
+	}
+
+	public static void ReadTancoraById(Document doc, String id) {
+		NodeList nList = doc.getElementsByTagName("Tancora");
+		for (int i = 0; i < nList.getLength(); i++) {
+			Node nNode = nList.item(i);
+			Element element = (Element) nNode;
+			if (nNode.getNodeType() == Node.ELEMENT_NODE) {
+				if (element.getAttribute("id").equals(id)) {
+					String idopont = element.getElementsByTagName("Idopont").item(0).getTextContent();
+					String terem = element.getElementsByTagName("Terem").item(0).getTextContent();
+					String csoportId = element.getAttribute("csId");
+					System.out.println("Táncóra adatok: \n\tIdõpont:\t" + idopont + "\n\tTerem:\t" + terem);
+					ReadCsoportById(doc, csoportId);
+				}
+			}
+		}
+	}
 }

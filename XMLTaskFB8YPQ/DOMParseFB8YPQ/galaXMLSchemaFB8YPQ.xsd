@@ -43,7 +43,7 @@
         </xs:keyref>
         <xs:keyref name="tanciskolaId_FK" refer="tanciskolaId_PK">
             <xs:selector xpath="Csoport"/>
-            <xs:field xpath="@tId"/>
+            <xs:field xpath="@tanciskolaId"/>
         </xs:keyref>
         <xs:keyref name="tancgalaId_FK" refer="tancgalaId_PK">
             <xs:selector xpath="Tanciskola"/>
@@ -51,7 +51,7 @@
         </xs:keyref>
         <xs:keyref name="szervezoId_FK" refer="szervezoId_PK">
             <xs:selector xpath="Tancgala"/>
-            <xs:field xpath="@szId"/>
+            <xs:field xpath="@szervezoId"/>
         </xs:keyref>
     </xs:element>
 
