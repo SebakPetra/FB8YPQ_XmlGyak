@@ -28,3 +28,4 @@
 <!ELEMENT szak (#PCDATA)>
 <!ATTLIST szak
   xmlns CDATA #FIXED ''>
+  
