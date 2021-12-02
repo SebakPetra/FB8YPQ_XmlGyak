@@ -1,0 +1,18 @@
+<html>
+    <body>
+        <table>
+            <tr>
+                <th>Miskolci rendsz&aacute;mok list&aacute;ja:</th>
+            </tr>
+            <tr>
+                <td>ABC-101</td>
+            </tr>
+            <tr>
+                <td>ABC-102</td>
+            </tr>
+            <tr>
+                <td>ABC-103</td>
+            </tr>
+        </table>
+    </body>
+</html>

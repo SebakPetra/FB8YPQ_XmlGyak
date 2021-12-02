@@ -16,12 +16,12 @@
     </Fellepes>
     <Szervezo id="1">
         <Ceg>DanceHall Kft.</Ceg>
-        <Nev>Nagy Fanni</Nev>
+        <Nev>Nagy Alexandra</Nev>
         <Telefonszam>12-345-32-23</Telefonszam>
     </Szervezo>
     <Tancgala id="1" szervezoId="1">
-        <Helyszin>Eger</Helyszin>
-        <Idopont>2021.01.30. 16:00</Idopont>
+        <Helyszin>Miskolc</Helyszin>
+        <Idopont>2021.01.30. 17:00</Idopont>
         <Idotartam>2 óra</Idotartam>
     </Tancgala>
     <Tancgala id="2" szervezoId="1">
